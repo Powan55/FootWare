@@ -1,0 +1,8 @@
+<h2>New Releases</h2>
+
+<div class="shoes-releases">
+    <a *ngFor="let shoe of shoes"
+    routerLink="/inventory/{{shoe.id}}">
+        {{shoe.brand}} {{shoe.name}} {{shoe.model}}
+    </a>
+</div>

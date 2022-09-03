@@ -1,0 +1,23 @@
+<div *ngIf="isAccountDefined() && isAdmin()">
+    <li *ngFor="let coupon of coupons">
+        <a>
+            <span class="code"> {{coupon.code}} </span>
+              <span class="discount">{{coupon.discount}} </span>
+        </a>
+        <button type="button" class="delete" title="delete shoe"
+            (click)="deleteCoupon(coupon)">x</button>
+    </li>
+    
+    <div>
+        <h2>Create a new Coupon</h2>
+        <label for="new-coupon-code">Coupon Code</label>
+        <input id="new-coupon-code" #couponCode/> 
+        <label for="new-coupon-discount">Coupon Discount</label>
+            <input id="new-coupon-discount" #couponDiscount/> 
+            <button type="button" class="add-button" 
+            (click)="createCoupon(couponCode.value, couponDiscount.value);">
+            Create Coupon
+        </button>
+    </div>
+</div>
+

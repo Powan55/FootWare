@@ -1,0 +1,26 @@
+/* Application-wide Styles */
+.top-bar {
+  background-color: #65343c;
+  color: white;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  height: 70px;
+}
+
+h1 {
+  font-size: x-large;
+  /*color: white;*/
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.nav-bar {
+  background-color: #7a434b;
+  color: white;
+  height: 30px;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}

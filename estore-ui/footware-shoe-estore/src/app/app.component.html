@@ -1,0 +1,37 @@
+<div class="top-bar">
+    <h1>{{title}}</h1>
+    <app-shoe-search></app-shoe-search>
+</div>
+
+<nav class="nav-bar">
+    <button>
+        <a routerLink="/dashboard">Homepage</a>
+    </button>
+    <button *ngIf="account && isAccountDefined()">
+        <a routerLink="/login">
+            Account Details</a>
+    </button>
+    <button *ngIf="account && !isAccountDefined()">
+        <a routerLink="/login">
+            Sign In | Sign Up
+        </a>
+    </button>
+    <button>
+        <a routerLink="/inventory">Shoes</a>
+    </button>
+    <button *ngIf="isAccountDefined() && isAdmin()">
+        <a routerLink="/coupons" >Manage Coupons</a>
+    </button>
+    <button *ngIf="isAccountDefined() && !isAdmin()">
+        <a routerLink="/cart" >Cart</a>
+    </button>
+    <button *ngIf="isAccountDefined() && !isAdmin()">
+        <a routerLink="/wishlist" >Wishlist</a>
+    </button>
+    <button *ngIf="isAccountDefined()">
+        <a routerLink="/purchases" >Purchases</a>
+    </button>
+</nav>
+
+<router-outlet></router-outlet>
+<app-messages></app-messages>

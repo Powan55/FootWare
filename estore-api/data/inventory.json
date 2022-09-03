@@ -1,0 +1,112 @@
+[
+    {
+        "id": 1,
+        "brand": "Yeezy",
+        "name": "Boost",
+        "model": 350,
+        "color": "Zebra",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 200.0,
+        "quantity": 5
+    },
+    {
+        "id": 2,
+        "brand": "Yeezy",
+        "name": "Wave Runner",
+        "model": 700,
+        "color": "Mud",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 300.0,
+        "quantity": 5
+    },
+    {
+        "id": 3,
+        "brand": "Jordan",
+        "name": "Retro",
+        "model": 4,
+        "color": "Black",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 400.0,
+        "quantity": 5
+    },
+    {
+        "id": 4,
+        "brand": "Calvin Klein",
+        "name": "Flattops",
+        "model": 1,
+        "color": "White",
+        "shoeType": "Flattops",
+        "size": 9.0,
+        "price": 9.0,
+        "quantity": 9
+    },
+    {
+        "id": 5,
+        "brand": "Nike",
+        "name": "Air Force",
+        "model": 1,
+        "color": "Black",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 9.0,
+        "quantity": 2
+    },
+    {
+        "id": 6,
+        "brand": "Nike",
+        "name": "Lebrons",
+        "model": 10,
+        "color": "Yellow",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 9.0,
+        "quantity": 2
+    },
+    {
+        "id": 7,
+        "brand": "Yeezy",
+        "name": "Red Octobers",
+        "model": 500,
+        "color": "Red",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 900.0,
+        "quantity": 1
+    },
+    {
+        "id": 8,
+        "brand": "Converse",
+        "name": "Check Taylor",
+        "model": 5,
+        "color": "Biege",
+        "shoeType": "Flattops",
+        "size": 9.0,
+        "price": 9.0,
+        "quantity": 3
+    },
+    {
+        "id": 9,
+        "brand": "Generic",
+        "name": "Dad Shoes",
+        "model": 9,
+        "color": "Brown",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 30.0,
+        "quantity": 100
+    },
+    {
+        "id": 10,
+        "brand": "Sketchers",
+        "name": "Running Shoe",
+        "model": 1,
+        "color": "Black and Gray",
+        "shoeType": "Athletic",
+        "size": 9.0,
+        "price": 9.0,
+        "quantity": 100
+    }
+]

@@ -1,0 +1,33 @@
+<div *ngIf="!isAccountDefined()">
+    <h1>Sign In</h1>
+    <input id="enter-username" #username placeholder="Enter your username"/>
+    
+    <div>
+        <div *ngIf="signUpMode == true">
+            <input id="enter-displayname" #displayname placeholder="Enter your displayname"/>
+            <button type="button"(click)="createAccount(username.value, displayname.value)" >Sign Up</button>
+            <button type="button" (click)="signUp()">Cancel</button>
+        </div>
+        <button type="button" (click)="signUp()"
+        *ngIf="signUpMode == false">Sign Up</button>
+        <button type="button" (click)="goToAccount(username.value)"
+        *ngIf="signUpMode == false">Sign In</button>
+    </div>
+</div>
+<div *ngIf="isAccountDefined()">
+    <h1>Account Details</h1>
+    <div>Username: {{account.userName}}, Displayname: {{account.displayName}}</div>
+    <div>
+        <h2>Change Account Info</h2>
+        <label for="account-username">Account Username: </label>
+        <input id="account-username" [(ngModel)]="account.userName" placeholder="username">
+    
+        <label for="account-displayname">Account Displayname: </label>
+        <input id="account-displayname" [(ngModel)]="account.displayName" placeholder="displayname">
+        <button type="button" (click)="save()">Save Changes</button>
+    </div>
+    <div>
+        <button type="button" (click)="logout()"> Log Out</button>
+        <button type="button" (click)="deleteAccount(account)"> Delete Account</button>
+    </div>
+</div>

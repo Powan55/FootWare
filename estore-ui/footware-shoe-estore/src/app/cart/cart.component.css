@@ -1,0 +1,13 @@
+#checkout, #totalPrice
+{
+    display:inline;
+}
+
+#checkout
+{
+    margin-left: 30px;
+}
+#totalPrice
+{
+    padding-left: 10px;
+}

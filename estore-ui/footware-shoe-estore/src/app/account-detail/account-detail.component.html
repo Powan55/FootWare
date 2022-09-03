@@ -1,0 +1,6 @@
+<div *ngIf="account">
+    <h1 *ngIf="account.isAdmin">Welcome Back {{account.displayName}} </h1>
+    <h1 *ngIf="!account.isAdmin">Welcome to Footware {{account.displayName}} </h1>
+</div>
+
+<app-dashboard></app-dashboard>

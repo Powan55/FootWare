@@ -1,0 +1,23 @@
+<div *ngIf="shoe">
+
+    <h2>{{shoe.brand | uppercase}} {{shoe.name | uppercase}} {{shoe.model}}s' Details</h2>
+    <div>Id: {{shoe.id}}, Brand Name: {{shoe.brand}}, Name: {{shoe.name}}, model: {{shoe.model}} <br> <br> </div>
+    <div>Color: {{shoe.color}}, Shoe Type: {{shoe.shoeType}}, Size: {{shoe.size}}, 
+      Price: {{shoe.price}}, Quantity: {{shoe.quantity}} <br> <br> 
+    </div>
+    
+    <div>
+      <div>
+        <label for="Product Color">Product Color: </label>
+        <input id="product-color" type="string" [(ngModel)]="shoe.color" placeholder="White">
+      </div>
+      <div>
+        <label for="Product Size">Product Size: </label>
+        <input id="product-size" type="number" [(ngModel)]="shoe.size" placeholder="10">
+      </div>
+      <button type="button" (click)="save()">save changes</button>
+    </div>
+
+  
+</div>
+<button type="button" (click)="goBack()">go back</button>

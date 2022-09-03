@@ -1,0 +1,29 @@
+<div *ngIf="isAccountDefined() && !isAdmin()">
+<div class="Cart">
+  <ul class="shoes">
+    <h2>Cart</h2>
+    <li *ngFor="let shoe of shoes">
+      <a routerLink="/cart/{{shoe.id}}">
+        <div class="shoe-name">
+          <span class="id"> {{shoe.id}} </span>
+          <span class="brand">{{shoe.brand}} </span>
+          <span class="name"> {{shoe.name}} </span>
+          <span class="model">{{shoe.model}} </span>
+          <span class="price">${{shoe.price | number: '1.2-2'}} </span>
+        </div>
+      </a>
+      <button type="button" class="delete" title="delete shoe" (click)="deleteShoe(shoe)">x</button>
+    </li>
+  </ul>
+  
+  <div *ngIf="shoes.length">
+    <div>
+      <!-- <label for="new-coupon-code">Coupon Code</label> -->
+      <input id="new-coupon-code" #couponCode placeholder="Enter in a coupon code"/> 
+      <button type="button" (click)="applyCoupon(couponCode.value)">Apply Coupon</button>
+    </div>
+    <button type="button" id="checkout" (click)="checkout()">Checkout</button>
+    <p id="totalPrice">Total: ${{getTotalPrice() | number: '1.2-2'}}</p>
+  </div>
+</div>
+</div>
